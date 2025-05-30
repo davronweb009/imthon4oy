@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registiratsiys</title>
+     <link rel="stylesheet" href="css/register.css">
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="icon" href="images/iMovies.webp">
+</head>
+<body>
+     <div id="loadingOverlay">
+          <div class="fancy-loader"></div>
+          <p>Загружается...</p>
+        </div>
+        
+     <div class="hero">
+          <div class="form-box">
+               <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+               </div>
+               <div class="social-icons">
+                <a href="https://www.facebook.com/login.php"> <i class="bx bxl-facebook-circle"></i></a>
+               <a href="https://www.instagram.com/"> <i class="bx bxl-instagram"></i></a>
+                 <a href="https://www.linkedin.com/company/twitter"><i class="bx bxl-twitter"></i></a>
+               </div>
+               <form id="login" class="input-group">
+                    <input type="text" placeholder="User Id" class="input-field" required>
+                    <input type="password" id="password" class="input-field" placeholder="Enter Password" required>
+                    <label>
+                         <input type="checkbox" id="showPassword"> <p>show password</p>
+                    </label>
+                    <button type="submit" class="submit-btn" style="margin-top: 15px;">Log In</button>
+               </form>
+
+               <form id="register" class="input-group">
+
+                    <input type="text" class="input-field" placeholder="User Id" required>
+
+                    <input type="email" class="input-field" placeholder="Email" required>
+
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+
+                    <input type="checkbox" class="check-box">
+
+                    <span>agree to the <a href="#">Term & services</a></span>
+
+                    <button type="submit" class="submit-btn">Log In</button>
+
+               </form>
+          </div>
+     </div>
+
+     <script src="js/register.js"></script>
+</body>
+</html>

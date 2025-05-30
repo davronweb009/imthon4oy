@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Trend</title>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="css/trend.css">
+     <link rel="icon" href="images/iMovies.webp">
+</head>
+<body>
+     
+    <header>
+        <a href="" class="logo">КИНОПОИСК</a>
+        <ul class="nav">
+            <li><a href="index.html"><i class='bx bxs-home'>Главная</i></a></li>
+            <li><a href="index1.html">Филъми</a></li>
+            <li><a href="adults.html">взрослые </a></li>
+            <li><a href="kids.html">Мультфильмы</a></li>
+            <li><a href="trend.html">известный</a></li>
+           <a href="register.html"><button id="logout" class="nav-btn">Log Out <i style="position: relative; top: 2px;" class='bx bx-exit'></i></button></a> 
+        </ul>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search">
+            <i class='bx bx-search'></i>
+        </div>
+    </header>
+    <div id="loadingOverlay">
+        <div class="fancy-loader"></div>
+        <p>Загружается...</p>
+      </div>
+      
+    
+    <div id="trend-movie-list" class="movies-grid" style="margin-top: 150px;"></div>
+
+    <script src="js/favorites.js"></script>
+     <script src="js/trend.js"></script>
+</body>
+</html>

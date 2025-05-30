@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Adults</title>
+     <link rel="stylesheet" href="css/adults.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/iMovies.webp">
+</head>
+<body>
+     
+     <header>
+          <a href="index.html" class="logo">КИНОПОИСК</a>
+          <ul class="nav">
+              <li><a href="index.html"><i class='bx bxs-home'>Главная</i></a></li>
+              <li><a href="index1.html">Филъми</a></li>
+              <li><a href="adults.html" id="adults-link">взрослые</a></li>
+              <li><a href="kids.html">Мультфильмы</a></li>
+              <li><a href="trend.html">известный</a></li>
+              <button class="one"><a href="register.html">Log Out</a></button>
+              </ul>
+          <div class="search">
+              <input type="text" id="search-input" placeholder="Search">
+              <i class='bx bx-search'></i>
+          </div>
+      </header>
+      <div id="loadingOverlay">
+        <div class="fancy-loader"></div>
+        <p>Загружается...</p>
+      </div>
+      
+      <div id="adults-movies" class="movies-grid" style="margin-top: 150px;"></div>
+
+      <div id="movie-list"></div>
+
+
+
+      <script src="js/favorites.js"></script>
+      <script src="js/adults.js"></script>
+</body>
+</html>
